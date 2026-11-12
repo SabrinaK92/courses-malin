@@ -1,4 +1,4 @@
-const CACHE='courses-v21';
+const CACHE='courses-v22';
 const FILES=['./','index.html','manifest.webmanifest','icon.png'];
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()));
